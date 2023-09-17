@@ -10,7 +10,7 @@ const Block = ({block,handeleBookmark}) => {
  const {course_name,img,details,price,credit}=block
    
     return (
-       <div className='bg-yellow-100 p-4 rounded-xl' >
+       <div className='bg-white p-4 rounded-xl' >
          
             <img className='h-36 w-full rounded-lg' src={img} alt="" />
             <h3 className='text-lg font-semibold pt-3'>{course_name} </h3>

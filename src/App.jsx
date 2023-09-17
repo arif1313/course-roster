@@ -6,11 +6,11 @@ import Blocs from './Components/Blocs/Blocs'
 import Bookmark from './Components/bookmarkblock/Bookmark'
 
 function App() {
-  const [Boomark , SetBookmark]=useState([]);
+  const [Bookmarks , SetBookmark]=useState([]);
 
 const handeleBookmark=(course_name)=>{
-
-SetBookmark(course_name);
+const newBookmark = [...Bookmarks,course_name]
+SetBookmark(newBookmark);
 }
   return (
     <>
@@ -24,7 +24,7 @@ SetBookmark(course_name);
 handeleBookmark ={handeleBookmark}
 ></Blocs>   
 <Bookmark
-name={Boomark}></Bookmark>
+bookmarks={Bookmarks}></Bookmark>
        
       </div>
       </section>
