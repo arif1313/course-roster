@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Block from "../Block/Block";
+import PropTypes from 'prop-types';
 
 
-const Blocs = () => {
+const Blocs = (handeleBookmark) => {
 const [Blocs ,setBlocks]=useState([]);
 useEffect(()=>{
 
@@ -17,6 +18,7 @@ useEffect(()=>{
            
            <div className="grid grid-cols-3 gap-7"> {
               Blocs.map((block,ind)=><Block
+              handeleBookmark={handeleBookmark}
               block={block}
               key={ind}
               ></Block>
@@ -24,5 +26,7 @@ useEffect(()=>{
         </div>
     );
 };
-
+Blocs.propTypes = {
+    handeleBookmark:PropTypes.func
+};
 export default Blocs;

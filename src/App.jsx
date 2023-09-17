@@ -1,12 +1,17 @@
 
 
+import { useState } from 'react'
 import './App.css'
 import Blocs from './Components/Blocs/Blocs'
 import Bookmark from './Components/bookmarkblock/Bookmark'
 
 function App() {
-  
+  const [Boomark , SetBookmark]=useState([]);
 
+const handeleBookmark=(blockName)=>{
+
+SetBookmark(blockName);
+}
   return (
     <>
    <body className=' bg-[#F3F3F3]'>
@@ -15,7 +20,9 @@ function App() {
   
       <div className='flex gap-7 my-7'>
         
-<Blocs></Blocs>   
+<Blocs
+handeleBookmark ={handeleBookmark}
+></Blocs>   
 <Bookmark></Bookmark>
        
       </div>
