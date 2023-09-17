@@ -12,20 +12,26 @@ function App() {
 
 const handeleBookmark=(course_name, credit)=>{
   const newCredit = CourseCredit - credit;
+ 
+  const selectBookmark =[...Bookmarks];
+ if(selectBookmark.includes(course_name)){
+  toast('this course added pleace select anothor')
+ }
+ else{
+ 
+  const newBookmark = [...selectBookmark ,course_name]
+  SetBookmark(newBookmark);
   if(newCredit>=0){
 
     setCourseCredit(newCredit);
   }
   else{
-    notify();
+    toast('total reamining creadit less than your limit')
   }
- 
-const newBookmark = [...Bookmarks,course_name]
-SetBookmark(newBookmark);
-}
- const notify =()=>{
-   toast('total reamining creadit less than your limit')
  }
+
+}
+ 
   return (
     <>
    <body className=' bg-[#F3F3F3]'>

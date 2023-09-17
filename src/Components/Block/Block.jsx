@@ -13,7 +13,7 @@ const Block = ({block,handeleBookmark}) => {
        <div className='bg-white p-4 rounded-xl' >
          
             <img className='h-36 w-full rounded-lg' src={img} alt="" />
-            <h3 className='text-lg font-semibold pt-3'>{course_name} </h3>
+            <h3 className=' font-semibold pt-3'>{course_name} </h3>
             <p className='my-3 text-justify '>{details} </p>
             <div className='my-3 flex justify-around items-center'>
                <div >
