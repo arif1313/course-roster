@@ -9,9 +9,14 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
   const [Bookmarks , SetBookmark]=useState([]);
   const [CourseCredit, setCourseCredit]=useState(20);
+  const [perCredit, setPercredit]=useState(0);
 
 const handeleBookmark=(course_name, credit)=>{
+  const newTotalcredit = perCredit + credit;
+   
+  
   const newCredit = CourseCredit - credit;
+ 
  
   const selectBookmark =[...Bookmarks];
  if(selectBookmark.includes(course_name)){
@@ -24,6 +29,7 @@ const handeleBookmark=(course_name, credit)=>{
   if(newCredit>=0){
 
     setCourseCredit(newCredit);
+    setPercredit(newTotalcredit);
   }
   else{
     toast('total reamining creadit less than your limit')
@@ -47,7 +53,8 @@ handeleBookmark ={handeleBookmark}
 
 <Bookmark
 bookmarks={Bookmarks}
-courseCredit ={CourseCredit} >
+courseCredit ={CourseCredit}
+percredit={perCredit} >
   
 </Bookmark>
 <ToastContainer></ToastContainer>
