@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Introduction to Programming",
+      "credit": 3,
+      "price": 49.99,
+      "details": "This course covers the fundamentals of programming using popular languages such as Python and Java. Topics include variables, loops, functions, and more."
+    },
+    {
+      "id": 2,
+      "img": "https://s3-alpha-sig.figma.com/img/37ee/9c89/2088c50ea5475adb01d053258afc6ebb?Expires=1695600000&Signature=BYmxRFSuFNrZbnWdtDQQzFnAz2AnAUIuE7LTxOjTrtZEvQuzO55iXuh6oOP3nXNPw1ekl3ecDpf7T0DBN9~yZOVFts4z19WB333AeKCcBt7YU87mKL0haGigPBlrTbabniv9gWGcftHbv1ELulyQVx-qzl7llHC-B4zAujZVMclAedvVkauWiidaZegVsWwLCnViaR5WcQkV~O7HbkJ7ykhmLG6X24FBKR294N~P7BApCbD9695IKCFkGc0ylIRiGsxxpnmZqX6zFxdtA9vFj6hx3c~hFwoMlqjf2~fdbEDrsV3H8I7w~C8JaLn3xMrkamWLa0HBkv1VyA7zFu11PQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "course_name": "Web Development Basics",
+      "credit": 2,
+      "price": 29.99,
+      "details": "Learn the basics of web development, including HTML, CSS, and JavaScript. Build your first website from scratch and understand how to style it."
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Data Science Fundamentals",
+      "credit": 4,
+      "price": 59.99,
+      "details": "Explore the world of data science and analytics. Learn data manipulation, visualization, and analysis techniques using Python and data science libraries."
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Digital Marketing Essentials",
+      "credit": 2,
+      "price": 39.99,
+      "details": "Discover the key principles of digital marketing, including SEO, social media marketing, email marketing, and online advertising strategies."
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Machine Learning Mastery",
+      "credit": 4,
+      "price": 79.99,
+      "details": "Dive deep into machine learning algorithms and techniques. Build machine learning models for classification, regression, and clustering."
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Financial Planning for Beginners",
+      "credit": 2,
+      "price": 24.99,
+      "details": "Learn the basics of personal finance, budgeting, saving, and investing. Take control of your financial future with this comprehensive course."
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Graphic Design Fundamentals",
+      "credit": 3,
+      "price": 44.99,
+      "details": "Master the essentials of graphic design, including Adobe Creative Suite tools. Create stunning visuals, logos, and marketing materials."
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Advanced Excel Techniques",
+      "credit": 2,
+      "price": 34.99,
+      "details": "Enhance your spreadsheet skills with advanced Excel techniques. Learn data analysis, formulas, and automation for business and finance."
+    },
+    {
+      "id": 9,
+      "img": "https://i.ibb.co/StvVz9w/istockphoto-1521680686-1024x1024.jpg",
+      "course_name": "Photography Basics",
+      "credit": 1,
+      "price": 19.99,
+      "details": "Start your photography journey with this beginner's guide. Learn camera settings, composition, and editing to capture stunning photos."
+    }
+  ]
+  
