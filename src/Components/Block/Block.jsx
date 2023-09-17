@@ -6,8 +6,8 @@ import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoBook } from 'react-icons/go';
 
 
-const Block = (block,handeleBookmark) => {
- const {course_name,img,details,price,credit}=block.block
+const Block = ({block,handeleBookmark}) => {
+ const {course_name,img,details,price,credit}=block
    
     return (
        <div className='bg-yellow-100 p-4 rounded-xl' >
@@ -24,7 +24,6 @@ const Block = (block,handeleBookmark) => {
 
                  </div>
             <button className='bg-[#2F80ED] rounded-lg w-full p-2 text-white font-semibold' onClick={()=>handeleBookmark(course_name)}>select</button>
-            
         
        </div>
     );

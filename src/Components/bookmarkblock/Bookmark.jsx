@@ -1,6 +1,8 @@
 
 import PropTypes from 'prop-types';
-const Bookmark = (name) => {
+const Bookmark = ({name}) => {
+
+  console.log(name);
     return (
         <div className="bg-white w-1/4 p-5 rounded-xl">
           <div className="m-5" >Time remaining : </div>
@@ -9,11 +11,10 @@ const Bookmark = (name) => {
             <h2 className="text-xl font-bold">Course name </h2> 
             <div>
               <ul>
-               {
-                <li>
-             {/* {name} */}
-                </li>
-               }
+           {
+
+            {name}
+           }
               </ul>
             </div>
             
@@ -23,6 +24,6 @@ const Bookmark = (name) => {
     );
 };
 Bookmark.propTypes = {
-  name:PropTypes
+ name:PropTypes.object
 };
 export default Bookmark;

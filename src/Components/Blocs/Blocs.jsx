@@ -4,7 +4,7 @@ import Block from "../Block/Block";
 import PropTypes from 'prop-types';
 
 
-const Blocs = (handeleBookmark) => {
+const Blocs = ({handeleBookmark}) => {
 const [Blocs ,setBlocks]=useState([]);
 useEffect(()=>{
 

@@ -8,9 +8,9 @@ import Bookmark from './Components/bookmarkblock/Bookmark'
 function App() {
   const [Boomark , SetBookmark]=useState([]);
 
-const handeleBookmark=(blockName)=>{
+const handeleBookmark=(course_name)=>{
 
-SetBookmark(blockName);
+SetBookmark(course_name);
 }
   return (
     <>
@@ -24,7 +24,7 @@ SetBookmark(blockName);
 handeleBookmark ={handeleBookmark}
 ></Blocs>   
 <Bookmark
-name= {Boomark}></Bookmark>
+name={Boomark}></Bookmark>
        
       </div>
       </section>
