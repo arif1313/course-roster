@@ -23,7 +23,8 @@ SetBookmark(blockName);
 <Blocs
 handeleBookmark ={handeleBookmark}
 ></Blocs>   
-<Bookmark></Bookmark>
+<Bookmark
+name= {Boomark}></Bookmark>
        
       </div>
       </section>
