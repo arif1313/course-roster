@@ -4,14 +4,28 @@ import { useState } from 'react'
 import './App.css'
 import Blocs from './Components/Blocs/Blocs'
 import Bookmark from './Components/bookmarkblock/Bookmark'
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [Bookmarks , SetBookmark]=useState([]);
+  const [CourseCredit, setCourseCredit]=useState(20);
 
-const handeleBookmark=(course_name)=>{
+const handeleBookmark=(course_name, credit)=>{
+  const newCredit = CourseCredit - credit;
+  if(newCredit>=0){
+
+    setCourseCredit(newCredit);
+  }
+  else{
+    notify();
+  }
+ 
 const newBookmark = [...Bookmarks,course_name]
 SetBookmark(newBookmark);
 }
+ const notify =()=>{
+   toast('total reamining creadit less than your limit')
+ }
   return (
     <>
    <body className=' bg-[#F3F3F3]'>
@@ -22,12 +36,19 @@ SetBookmark(newBookmark);
         
 <Blocs
 handeleBookmark ={handeleBookmark}
-></Blocs>   
+></Blocs> 
+
+
 <Bookmark
-bookmarks={Bookmarks}></Bookmark>
+bookmarks={Bookmarks}
+courseCredit ={CourseCredit} >
+  
+</Bookmark>
+<ToastContainer></ToastContainer>
        
       </div>
       </section>
+     
    </body>
     </>
   )

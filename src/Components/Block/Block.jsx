@@ -23,7 +23,7 @@ const Block = ({block,handeleBookmark}) => {
                  <span className='inline-block mr-3'><GoBook></GoBook> </span>credit: {credit} hr</div>
 
                  </div>
-            <button className='bg-[#2F80ED] rounded-lg w-full p-2 text-white font-semibold' onClick={()=>handeleBookmark(course_name)}>select</button>
+            <button className='bg-[#2F80ED] rounded-lg w-full p-2 text-white font-semibold' onClick={()=>handeleBookmark(course_name, credit)}>select</button>
         
        </div>
     );
